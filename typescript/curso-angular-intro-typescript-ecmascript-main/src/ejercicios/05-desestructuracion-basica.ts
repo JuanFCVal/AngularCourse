@@ -24,7 +24,7 @@ const reproductor: Reproductor = {
     }
 }
 
-const { volumen, segundo, cancion, detalles } = reproductor;
+const { volumen, segundo, cancion, detalles } = reproductor; //Extraer propiedades del objeto en variables constatnes
 const { autor } = detalles;
 
 

@@ -5,6 +5,7 @@
 export interface Producto {
     desc: string;
     precio: number;
+
 }
 
 const telefono: Producto = {
