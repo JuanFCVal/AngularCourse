@@ -11,7 +11,7 @@ export class ContadorComponent  {
 
 
   valor: number = 0;
-  base: number
+  base: number = 5;
   title = 'Contador app';
 
   acumular(valor: number){
