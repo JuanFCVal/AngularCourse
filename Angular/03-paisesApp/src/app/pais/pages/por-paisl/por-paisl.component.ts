@@ -21,7 +21,6 @@ export class PorPaislComponent implements OnInit {
       paises =>{
         this.termino = termino
         this.hayError = false;
-        console.log(paises);
         this.paises = paises
       }, (err) =>{
         this.hayError = true;
@@ -30,5 +29,9 @@ export class PorPaislComponent implements OnInit {
         console.info(err)
       }
     )
+  }
+  sugerencias(termino: string){
+    this.hayError = false;
+
   }
 }
