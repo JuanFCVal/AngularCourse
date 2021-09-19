@@ -13,7 +13,14 @@ export class SharedComponent  {
   }
 
   get historial(){
+    console.log(this.gifService.historial)
     return this.gifService.historial
+    
+  }
+
+  buscarGif(argument: string){
+    console.log(argument)
+    this.gifService.buscarGifs(argument)
   }
 
 
