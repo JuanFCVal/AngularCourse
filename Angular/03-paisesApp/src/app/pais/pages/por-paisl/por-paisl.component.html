@@ -1,1 +1,41 @@
-<p>por-paisl works!</p>
+<h2>Por país</h2>
+<hr> 
+<div class="row">
+    <div class="col">
+        <form              (ngSubmit)="buscar()" >
+            <input 
+            [(ngModel)]="termino"
+            autocomplete="off"
+            class="form-control"
+            type="text" 
+            name="termino" 
+            placeholder="Buscar país..">
+        </form>
+    </div>
+</div>
+<hr>
+<div *ngIf="hayError" class="alert alert-danger">
+    No se encontró nada con el término {{termino}}
+</div>
+
+<div  *ngIf="!hayError" class="row">
+    <div class="col">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Bandera</th>
+                    <th>Nombre</th>
+                    <th>Población</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td>1</td>
+                <td>Bandera</td>
+                <td>Nombre</td>
+                <td>Pobliacon</td>
+                <a href="">Ver más</a>
+            </tbody>
+        </table>
+    </div>
+</div>
