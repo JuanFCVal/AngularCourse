@@ -4,6 +4,7 @@
     <div class="col">
         <app-input-search
          (onEnter)='buscar( $event )'
+         placeHolder="Busqueda por país"
          (onDebounce)="sugerencias($event)">
         </app-input-search>
     </div>

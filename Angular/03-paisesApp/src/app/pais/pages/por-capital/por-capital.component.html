@@ -4,7 +4,9 @@
     <div class="col">
         <app-input-search
          (onEnter)='buscar( $event )'
+         placeHolder="Busqueda por capital"
          (onDebounce)="sugerencias($event)">
+         
         </app-input-search>
     </div>
 </div>
@@ -15,6 +17,6 @@
 
 <div  *ngIf="paises.length>0" class="row">
     <div class="col">
-        <app-pais-tabla [paises] ='paises'></app-pais-tabla>
+        <app-pais-tabla [paises] ='paises' ></app-pais-tabla>
     </div>
 </div>
