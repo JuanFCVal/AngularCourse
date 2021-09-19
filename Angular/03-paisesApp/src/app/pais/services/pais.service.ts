@@ -22,4 +22,8 @@ export class PaisService {
     const url = `${this._apiUrl}/alpha/${termino}`
     return this.http.get<Country>(url); //Se agrega el tipado de la respuesta
   }
+  getCountryByRegion(termino: string): Observable<Country[]>{
+    const url = `${this._apiUrl}/region/${termino}`
+    return this.http.get<Country[]>(url); //Se agrega el tipado de la respuesta
+  }
 }

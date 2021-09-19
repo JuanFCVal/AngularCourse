@@ -9,9 +9,14 @@
     }" -->
     <div class="col">
         <button (click) = "activarRegion(region)"
-        [class]="  (region === regionActiva) ?  'btn btn-primary': 'btn btn-outline-primary'"
+        [class]="  (region === regionActiva) ?  'btn btn-primary regionB': 'btn btn-outline-primary regionB'"
         *ngFor = "let region of regiones">
             {{region | titlecase}}
         </button>
+    </div>
+    <div  *ngIf="paises.length>0" class="row">
+        <div class="col">
+            <app-pais-tabla [paises] ='paises' ></app-pais-tabla>
+        </div>
     </div>
 </div>
