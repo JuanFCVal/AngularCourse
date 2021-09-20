@@ -11,7 +11,7 @@ export class PaisService {
   private _apiUrl: string = "https://restcountries.eu/rest/v2"
   get httpParams(){
     return new HttpParams().set(
-      'fields', 'name;capital;alpha2code;flag;population'
+      'fields', 'name;capital;alpha2Code;flag;population'
     )}
   constructor(private http: HttpClient) { }
   buscarPais(termino: string): Observable<Country[]>{
