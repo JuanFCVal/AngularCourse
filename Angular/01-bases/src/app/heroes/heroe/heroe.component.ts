@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeroeComponent  {
   nombre: string = "Ironman";
   edad: number = 23
+  persona : any
 
 
 
@@ -17,6 +18,8 @@ export class HeroeComponent  {
 
   cambiarNombre(): void{
     this.nombre = "Spiderman";
+
+
   }
   cambiarEdad(): void{
     this.edad = Math.floor(Math.random() * (90 - 19 + 1)) + 19;;
